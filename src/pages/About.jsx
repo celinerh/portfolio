@@ -1,8 +1,29 @@
 import Heading from "../components/Heading";
+import TechnologyCard from "../components/TechnologyCard";
+import {
+  SiReact,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiFigma,
+} from "react-icons/si";
+import { FaGit, FaNpm } from "react-icons/fa";
+
+const technologyCards = [
+  { title: "React.js", icon: <SiReact className="h-10 w-auto" /> },
+  { title: "Javascript", icon: <SiJavascript className="h-10 w-auto" /> },
+  { title: "HTML", icon: <SiHtml5 className="h-10 w-auto" /> },
+  { title: "CSS", icon: <SiCss3 className="h-10 w-auto" /> },
+  { title: "TailwindCSS", icon: <SiTailwindcss className="h-10 w-auto" /> },
+  { title: "Figma", icon: <SiFigma className="h-10 w-auto" /> },
+  { title: "git", icon: <FaGit className="h-10 w-auto" /> },
+  { title: "npm", icon: <FaNpm className="h-10 w-auto" /> },
+];
 
 const About = () => {
   return (
-    <div className="mx-44 flex flex-col gap-44">
+    <div className="mx-24 flex flex-col gap-36">
       <div className="grid grid-cols-2 gap-10">
         <div className="mt-10">
           <Heading title="Celine Holvert" />
@@ -57,6 +78,17 @@ const About = () => {
               fill="#FAF5FF"
             />
           </svg>
+        </div>
+      </div>
+      <div>
+        <Heading title="Teknologier" />
+        <div className="flex gap-10 flex-wrap">
+          {technologyCards.map((technologyCard) => (
+            <TechnologyCard
+              title={technologyCard.title}
+              icon={technologyCard.icon}
+            />
+          ))}
         </div>
       </div>
     </div>
