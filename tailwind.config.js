@@ -6,6 +6,9 @@ module.exports = {
       letterSpacing: {
         widest: ".22em",
       },
+      fontFamily: {
+        AbhayaLibre: ["Abhaya Libre", "serif"],
+      },
     },
   },
   plugins: [],
