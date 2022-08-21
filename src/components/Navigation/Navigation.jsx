@@ -9,7 +9,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="grid grid-cols-[auto,_1fr] my-5 mx-10">
+    <nav className="grid grid-cols-[auto,_1fr] mt-5 mb-24 mx-10">
       <Link to="/">
         <svg
           width="205"
