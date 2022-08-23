@@ -4,8 +4,8 @@ import NavigationListItem from "./NavigationListItem";
 
 const Navigation = () => {
   const NavigationListItems = [
-    { title: "Om", navLinkTo: "" },
-    { title: "Projekter", navLinkTo: "" },
+    { title: "Om", navLinkTo: "/" },
+    { title: "Projekter", navLinkTo: "/projekter" },
   ];
 
   return (
