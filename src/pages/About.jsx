@@ -87,6 +87,7 @@ const About = () => {
             <TechnologyCard
               title={technologyCard.title}
               icon={technologyCard.icon}
+              key={technologyCard.title}
             />
           ))}
         </div>
