@@ -1,4 +1,4 @@
-const Heading = ({ title, width }) => {
+const Heading = ({ title }) => {
   return (
     <h1 className="relative text-5xl font-AbhayaLibre inline-block mb-10">
       {title}
