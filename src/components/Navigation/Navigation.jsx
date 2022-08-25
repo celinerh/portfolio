@@ -100,37 +100,33 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="pt-2 pb-3 space-y-1">
+          <Disclosure.Panel className="pt-4 pb-8 border-b sm:hidden border-zinc-600">
+            <div className="flex flex-col items-center gap-4 ">
               {NavigationListItems.map((listItem) => (
                 <NavLink
                   to={listItem.navLinkTo}
                   key={listItem.title}
-                  className="block py-2 pl-3 pr-4 text-base font-medium tracking-wide text-gray-500 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700"
+                  className="block text-base font-medium tracking-wide text-zinc-600"
                 >
                   {listItem.title}
                 </NavLink>
               ))}
-            </div>
-            <div className="mb-8 ">
-              <div className="flex items-center py-4 border-b border-zinc-600">
-                <ul className="flex gap-6 mx-auto text-2xl ">
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/celinerh"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaLinkedin />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" target="_blank" rel="noreferrer">
-                      <FaGithubSquare />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <ul className="flex gap-6 mx-auto text-2xl ">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/celinerh"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank" rel="noreferrer">
+                    <FaGithubSquare />
+                  </a>
+                </li>
+              </ul>
             </div>
           </Disclosure.Panel>
         </>
