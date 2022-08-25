@@ -10,15 +10,23 @@ import {
 } from "react-icons/si";
 import { FaGit, FaNpm } from "react-icons/fa";
 
+const technologyCardsClassName = "w-auto h-6 md:h-10";
+
 const technologyCards = [
-  { title: "React.js", icon: <SiReact className="w-auto h-10" /> },
-  { title: "Javascript", icon: <SiJavascript className="w-auto h-10" /> },
-  { title: "HTML", icon: <SiHtml5 className="w-auto h-10" /> },
-  { title: "CSS", icon: <SiCss3 className="w-auto h-10" /> },
-  { title: "TailwindCSS", icon: <SiTailwindcss className="w-auto h-10" /> },
-  { title: "Figma", icon: <SiFigma className="w-auto h-10" /> },
-  { title: "git", icon: <FaGit className="w-auto h-10" /> },
-  { title: "npm", icon: <FaNpm className="w-auto h-10" /> },
+  { title: "React.js", icon: <SiReact className={technologyCardsClassName} /> },
+  {
+    title: "Javascript",
+    icon: <SiJavascript className={technologyCardsClassName} />,
+  },
+  { title: "HTML", icon: <SiHtml5 className={technologyCardsClassName} /> },
+  { title: "CSS", icon: <SiCss3 className={technologyCardsClassName} /> },
+  {
+    title: "TailwindCSS",
+    icon: <SiTailwindcss className={technologyCardsClassName} />,
+  },
+  { title: "Figma", icon: <SiFigma className={technologyCardsClassName} /> },
+  { title: "git", icon: <FaGit className={technologyCardsClassName} /> },
+  { title: "npm", icon: <FaNpm className={technologyCardsClassName} /> },
 ];
 
 const About = () => {
@@ -82,7 +90,7 @@ const About = () => {
       </div>
       <div>
         <Heading title="Teknologier" className="text-3xl md:text-5xl" />
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-wrap gap-8 mb-6 md:gap-10">
           {technologyCards.map((technologyCard) => (
             <TechnologyCard
               title={technologyCard.title}

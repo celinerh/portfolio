@@ -1,10 +1,10 @@
 const TechnologyCard = ({ title, icon }) => {
   return (
-    <div className="w-min flex flex-col gap-3">
-      <div className="w-24 h-36 bg-gray-50 rounded-full flex justify-center items-center">
-        <span className="">{icon}</span>
+    <div className="flex flex-col gap-3 w-min">
+      <div className="flex items-center justify-center w-16 rounded-full bg-gray-50 h-28 md:w-24 md:h-36">
+        <span>{icon}</span>
       </div>
-      <h2 className="text-center">{title}</h2>
+      <h2 className="text-xs text-center md:text-base">{title}</h2>
     </div>
   );
 };
