@@ -11,20 +11,20 @@ import {
 import { FaGit, FaNpm } from "react-icons/fa";
 
 const technologyCards = [
-  { title: "React.js", icon: <SiReact className="h-10 w-auto" /> },
-  { title: "Javascript", icon: <SiJavascript className="h-10 w-auto" /> },
-  { title: "HTML", icon: <SiHtml5 className="h-10 w-auto" /> },
-  { title: "CSS", icon: <SiCss3 className="h-10 w-auto" /> },
-  { title: "TailwindCSS", icon: <SiTailwindcss className="h-10 w-auto" /> },
-  { title: "Figma", icon: <SiFigma className="h-10 w-auto" /> },
-  { title: "git", icon: <FaGit className="h-10 w-auto" /> },
-  { title: "npm", icon: <FaNpm className="h-10 w-auto" /> },
+  { title: "React.js", icon: <SiReact className="w-auto h-10" /> },
+  { title: "Javascript", icon: <SiJavascript className="w-auto h-10" /> },
+  { title: "HTML", icon: <SiHtml5 className="w-auto h-10" /> },
+  { title: "CSS", icon: <SiCss3 className="w-auto h-10" /> },
+  { title: "TailwindCSS", icon: <SiTailwindcss className="w-auto h-10" /> },
+  { title: "Figma", icon: <SiFigma className="w-auto h-10" /> },
+  { title: "git", icon: <FaGit className="w-auto h-10" /> },
+  { title: "npm", icon: <FaNpm className="w-auto h-10" /> },
 ];
 
 const About = () => {
   return (
-    <div className="mx-24 flex flex-col gap-36">
-      <div className="grid grid-cols-2 gap-10">
+    <div className="flex flex-col mx-24 gap-36">
+      <div className="grid grid-cols-1">
         <div className="mt-10">
           <Heading title="Celine Holvert" />
           <p className="text-base">
@@ -38,7 +38,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="relative w-min place-self-center">
+        <div className="relative mt-14 w-min place-self-center">
           <img
             src=".\images\portrait.png"
             alt="Portræt af Celine Holvert"
@@ -82,7 +82,7 @@ const About = () => {
       </div>
       <div>
         <Heading title="Teknologier" />
-        <div className="flex gap-10 flex-wrap">
+        <div className="flex flex-wrap gap-10">
           {technologyCards.map((technologyCard) => (
             <TechnologyCard
               title={technologyCard.title}
