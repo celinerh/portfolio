@@ -111,9 +111,9 @@ export default function Example() {
                 </NavLink>
               ))}
             </div>
-            <div className="mb-8 border-t border-gray-300">
+            <div className="mb-8 ">
               <div className="flex items-center py-4 border-b border-zinc-600">
-                <ul className="flex items-center gap-3 mx-auto text-2xl ">
+                <ul className="flex gap-6 mx-auto text-2xl ">
                   <li>
                     <a
                       href="https://www.linkedin.com/in/celinerh"
