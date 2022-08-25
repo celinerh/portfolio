@@ -55,6 +55,7 @@ export default function Example() {
                         title={listItem.title}
                         key={listItem.title}
                         navLinkTo={listItem.navLinkTo}
+                        className="text-sm"
                       />
                     ))}
                   </ul>
