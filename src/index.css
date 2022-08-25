@@ -9,4 +9,8 @@
     font-family: "Inter", sans-serif;
     color: #52525b;
   }
+
+  body {
+    min-width: 320px;
+  }
 }
