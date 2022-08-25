@@ -23,10 +23,10 @@ const technologyCards = [
 
 const About = () => {
   return (
-    <div className="flex flex-col mx-24 gap-36">
-      <div className="grid grid-cols-1">
-        <div className="mt-10">
-          <Heading title="Celine Holvert" />
+    <div className="flex flex-col mx-6 xs:mx-12 sm:mx-16 md:mx-20 lg:mx-24 gap-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+        <div>
+          <Heading title="Celine Holvert" className="text-3xl md:text-5xl" />
           <p className="text-base">
             Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
             tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -38,14 +38,14 @@ const About = () => {
           </p>
         </div>
 
-        <div className="relative mt-14 w-min place-self-center">
+        <div className="relative mt-14 md:-mt-16 w-min place-self-center">
           <img
             src=".\images\portrait.png"
             alt="Portræt af Celine Holvert"
-            className="min-w-[298px] min-h-[298px]"
+            className="min-w-[200px] min-h-[200px] md:min-w-[298px] md:min-h-[298px]"
           />
           <svg
-            className="absolute bottom-0 left-4 -z-10"
+            className="absolute bottom-0 w-1/2 h-1/2 left-4 -z-10 md:w-auto md:h-auto"
             width="270"
             height="168"
             viewBox="0 0 270 168"
@@ -58,7 +58,7 @@ const About = () => {
             />
           </svg>
           <svg
-            className="absolute -bottom-9 -right-10"
+            className="absolute w-3/5 -bottom-9 -right-10 h-3/5 md:w-auto md:h-auto"
             width="172"
             height="161"
             viewBox="0 0 172 161"
@@ -81,7 +81,7 @@ const About = () => {
         </div>
       </div>
       <div>
-        <Heading title="Teknologier" />
+        <Heading title="Teknologier" className="text-3xl md:text-5xl" />
         <div className="flex flex-wrap gap-10">
           {technologyCards.map((technologyCard) => (
             <TechnologyCard
