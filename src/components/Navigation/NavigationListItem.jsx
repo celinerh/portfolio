@@ -8,7 +8,7 @@ const NavigationListItem = ({ title, navLinkTo, className }) => {
         className={`font-medium tracking-wide ${className}`}
       >
         {title}
-        <span className="font-extrabold text-amber-400">.</span>
+        <span className="font-extrabold text-purple-400">.</span>
       </NavLink>
     </li>
   );
