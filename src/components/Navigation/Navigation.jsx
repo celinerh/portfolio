@@ -9,7 +9,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="grid grid-cols-[auto,_1fr] mt-5 mb-24 mx-10">
+    <nav className="grid grid-cols-[auto_1fr] mt-5 mb-24 mx-10 border-b border-zinc-600">
       <Link to="/">
         <svg
           width="205"
@@ -17,6 +17,7 @@ const Navigation = () => {
           viewBox="0 0 205 86"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-24 md:w-auto"
         >
           <rect
             x="1"
@@ -38,8 +39,8 @@ const Navigation = () => {
         </svg>
       </Link>
 
-      <div className="flex items-center ml-4 border-b-2 border-zinc-600 h-[69px]">
-        <ul className="flex gap-16 items-center ml-auto pr-16 border-r-2 border-gray-300">
+      <div className="flex items-center ml-4 md:border-b-2 md:border-zinc-600 h-[69px]">
+        <ul className="flex items-center gap-5 pr-6 ml-auto border-r-2 border-gray-300 md:pr-16 md:gap-16">
           {NavigationListItems.map((listItem) => (
             <NavigationListItem
               title={listItem.title}
@@ -48,7 +49,7 @@ const Navigation = () => {
             />
           ))}
         </ul>
-        <ul className="flex gap-8 items-center px-10 text-gray-300 text-2xl">
+        <ul className="flex items-center gap-2 px-6 text-2xl text-gray-300 md:gap-4 md:px-10 md:gap-8">
           <li>
             <a
               href="https://www.linkedin.com/in/celinerh"
