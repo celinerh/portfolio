@@ -34,7 +34,7 @@ const About = () => {
     <div className="flex flex-col mx-6 xs:mx-12 sm:mx-16 md:mx-20 lg:mx-24 gap-36">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
         <div>
-          <Heading title="Celine Holvert" className="text-3xl md:text-5xl" />
+          <Heading title="Hej!" className="text-3xl md:text-5xl" />
           <p className="text-base">
             Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
             tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
