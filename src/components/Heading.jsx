@@ -1,8 +1,8 @@
-const Heading = ({ title }) => {
+const Heading = ({ title, className }) => {
   return (
-    <h1 className="relative text-5xl font-AbhayaLibre inline-block mb-10">
+    <h1 className={`relative inline-block mb-10 font-AbhayaLibre ${className}`}>
       {title}
-      <span className="absolute bottom-1 -left-1 -z-10 w-3/5 h-5 bg-amber-100"></span>
+      <span className="absolute w-3/5 h-2/5 bottom-1 -left-1 -z-10 bg-amber-100"></span>
     </h1>
   );
 };
